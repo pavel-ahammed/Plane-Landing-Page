@@ -51,28 +51,28 @@
           class="sm:w-20 sm:h-auto h-6 w-auto"
       /></a>
       <ul class="flex list-none gap-4">
-        <a href="#" class="no-underline hidden"
+        <a href="#" class="no-underline hidden sm:contents"
           ><li
             class="sm:text-base text-xs font-inter font-semibold text-text_heading"
           >
             Pricing
           </li></a
         >
-        <a href="#" class="no-underline hidden"
+        <a href="#" class="no-underline hidden sm:contents"
           ><li
             class="sm:text-base text-xs font-inter font-semibold text-text_heading"
           >
             Changelog
           </li></a
         >
-        <a href="#" class="no-underline hidden"
+        <a href="#" class="no-underline hidden sm:contents"
           ><li
             class="sm:text-base text-xs font-inter font-semibold text-text_heading"
           >
             Blog
           </li></a
         >
-        <a href="#" class="no-underline hidden"
+        <a href="#" class="no-underline hidden sm:contents"
           ><li
             class="sm:text-base text-xs font-inter font-semibold text-text_heading"
           >
@@ -109,12 +109,12 @@
           </div>
           <div class="flex flex-col items-center text-center">
             <h1
-              class="text-4xl text-text_heading w-full mx-auto mt-2 font-bold font-inter px-4"
+              class="sm:px-32 text-4xl text-text_heading w-full mx-auto mt-2 font-bold font-inter px-4"
             >
               Project management tool from the future.
             </h1>
             <p
-              class="text-text_secondary max-w-[300px] mx-auto mt-5 font-inter w-full"
+              class="text-text_secondary px-4 sm:px-28 mx-auto mt-5 font-inter w-full"
             >
               Meet Plane. An open-source software development tool to manage
               issues, sprints, and product roadmaps with peace of mind.
@@ -330,11 +330,13 @@
           class="w-full bg-[#111827] rounded-3xl mx-auto pt-12 relative px-6"
         >
           <h3
-            class="px-4 text-center text-text_primar font-bold font-inter text-xl"
+            class="px-4 text-center text-text_primar sm:text-2xl font-bold font-inter text-xl"
           >
             Setup in 5 minutes. Hosted on < your-domain >.com
           </h3>
-          <p class="font-inter text-sm text-[#D1D5DB] text-center px-4 mt-4">
+          <p
+            class="font-inter text-sm text-[#D1D5DB] sm:px-20 text-center px-4 mt-4"
+          >
             Plane is proudly Open-source, released under the AGPL-3.0 license
             and can be easily self-hosted using Docker.
           </p>
@@ -354,12 +356,14 @@
           <div class="flex justify-center">
             <img
               src="./assets/image/Host-section-shape.svg"
-              class="w-60 h-20 z-0 absolute bottom-0"
+              class="sm:w-auto sm:h-auto w-60 h-20 z-0 absolute bottom-0"
             />
           </div>
 
-          <div class="flex flex-col gap-5 mt-8">
-            <div class="flex justify-between">
+          <div
+            class="flex flex-col gap-5 mt-8 sm:flex-row sm:justify-evenly pb-10"
+          >
+            <div class="flex justify-between sm:gap-20">
               <div class="border-r inline-block pr-5">
                 <span class="flex flex-col gap-3">
                   <p class="text-white z-10 font-bold font-inter text-2xl">
@@ -377,7 +381,7 @@
                 </span>
               </div>
             </div>
-            <div class="flex justify-between">
+            <div class="flex justify-between sm:gap-20">
               <div class="border-r inline-block pr-5">
                 <span class="flex flex-col gap-3">
                   <p class="text-white z-10 font-bold font-inter text-2xl">
@@ -485,56 +489,54 @@
           <div class="flex justify-center pb-6">
             <img
               src="./assets/image/Host-section-shape.svg"
-              class="w-60 h-20 z-0 absolute bottom-[-20px]"
+              class="sm:w-auto sm:h-[55%] w-60 h-20 z-0 absolute bottom-[-20px]"
             />
           </div>
         </div>
       </section>
       <!-- join community section end here -->
     </main>
-    <footer class="bg-black w-full pt-5">
-      <div class="flex justify-around">
-        <div class="flex flex-col items-start gap-2">
-          <img src="./assets/image/logo/plan-footer.svg" class="h-6 w-auto" />
-          <p class="text-white text-sm">Questions? Comments? Concerns?</p>
-          <button class="text-black w-max px-3 py-2 bg-white rounded-md">
-            Chat with us on Discord
-          </button>
-        </div>
-
-        <div class="flex flex-col gap-2">
-          <p class="font-inter text-white text-base">Company</p>
-          <p class="font-inter text-white text-xs">Changelog</p>
-          <p class="font-inter text-white text-xs">Pricing</p>
-          <p class="font-inter text-white text-xs">About</p>
-        </div>
+    <footer
+      class="bg-black w-full pt-5 grid grid-cols-2 sm:grid-cols-3 gap-y-6 pl-5"
+    >
+      <div class="flex flex-col items-start gap-2">
+        <img src="./assets/image/logo/plan-footer.svg" class="h-6 w-auto" />
+        <p class="text-white text-sm">Questions? Comments? Concerns?</p>
+        <button class="text-black w-max px-3 py-2 bg-white rounded-md">
+          Chat with us on Discord
+        </button>
       </div>
-      <div class="flex justify-around mt-10">
-        <div class="flex flex-col gap-3">
-          <p class="font-inter text-white text-base">Legal</p>
-          <p class="font-inter text-white text-xs">Privacy Policy</p>
-          <p class="font-inter text-white text-xs">Terms & Conditions</p>
-        </div>
-        <div class="flex flex-col gap-3">
-          <p class="font-inter text-white text-base">Resources</p>
-          <p class="font-inter text-white text-xs">Docs</p>
-          <p class="font-inter text-white text-xs">System Status</p>
-        </div>
-        <div class="flex flex-col gap-2">
-          <p class="font-inter text-white text-base">Community</p>
-          <p class="font-inter text-white text-xs">
-            <i class="fa-brands fa-twitter pr-2"></i>Twitter
-          </p>
-          <p class="font-inter text-white text-xs">
-            <i class="fa-brands fa-github pr-2"></i>GitHub
-          </p>
-          <p class="font-inter text-white text-xs">
-            <i class="fa-brands fa-youtube pr-2"></i>YouTube
-          </p>
-          <p class="font-inter text-white text-xs">
-            <i class="fa-brands fa-linkedin pr-2"></i>LinkedIn
-          </p>
-        </div>
+
+      <div class="flex flex-col gap-2">
+        <p class="font-inter text-white text-base">Company</p>
+        <p class="font-inter text-white text-xs">Changelog</p>
+        <p class="font-inter text-white text-xs">Pricing</p>
+        <p class="font-inter text-white text-xs">About</p>
+      </div>
+      <div class="flex flex-col gap-3">
+        <p class="font-inter text-white text-base">Legal</p>
+        <p class="font-inter text-white text-xs">Privacy Policy</p>
+        <p class="font-inter text-white text-xs">Terms & Conditions</p>
+      </div>
+      <div class="flex flex-col gap-3">
+        <p class="font-inter text-white text-base">Resources</p>
+        <p class="font-inter text-white text-xs">Docs</p>
+        <p class="font-inter text-white text-xs">System Status</p>
+      </div>
+      <div class="flex flex-col gap-2">
+        <p class="font-inter text-white text-base">Community</p>
+        <p class="font-inter text-white text-xs">
+          <i class="fa-brands fa-twitter pr-2"></i>Twitter
+        </p>
+        <p class="font-inter text-white text-xs">
+          <i class="fa-brands fa-github pr-2"></i>GitHub
+        </p>
+        <p class="font-inter text-white text-xs">
+          <i class="fa-brands fa-youtube pr-2"></i>YouTube
+        </p>
+        <p class="font-inter text-white text-xs">
+          <i class="fa-brands fa-linkedin pr-2"></i>LinkedIn
+        </p>
       </div>
     </footer>
   </body>
